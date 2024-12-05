@@ -1,0 +1,11 @@
+.footer {
+  font-family: var(--font-family-alt);
+  font-size: 16px;
+  background-color: var(--color-brown);
+  color: var(--color-dark-alt);
+  padding: 40px 72px 72px;
+}
+
+.footer p {
+  opacity: 0.6;
+}

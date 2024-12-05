@@ -1,0 +1,81 @@
+.button {
+  font-family: var(--font-family-alt);
+  height: var(--button-height);
+  padding-inline: 49px;
+  font-size: 16px;
+  color: var(--color-white);
+  background-color: var(--color-dark);
+  border: var(--border);
+  border-radius: var(--border-radius);
+  transition: background;
+  transition-duration: var(--transition-duration);
+}
+
+.button:hover {
+  cursor: pointer;
+  border-color: var(--color-yellow);
+  color: var(--color-dark);
+  background-color: var(--color-yellow);
+}
+
+.button--transparent {
+  background-color: transparent;
+  color: var(--color-dark);
+}
+
+.button--transparent:hover {
+  color: var(--color-white);
+  border-color: var(--color-dark);
+  background-color: var(--color-dark);
+}
+
+@media (max-width: 768px) {
+  .button {
+    height: var(--button-height-small);
+  }
+}
+
+.button--alt {
+  color: var(--color-accent-alt);
+  background-color: transparent;
+  border: var(--border-alt);
+  height: var(--button-alt-height);
+  padding-inline: 12px;
+}
+
+.button--alt:hover {
+  cursor: pointer;
+  color: var(--color-white);
+  border: var(--border-alt);
+
+  background-color: var(--color-accent-alt);
+}
+
+.button-circle {
+  padding-inline: 0px;
+  height: 36px;
+  width: 36px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: var(--color-dark);
+}
+
+.button-circle-icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button-circle svg {
+  color: var(--color-white);
+}
+
+.button-circle:disabled {
+  background-color: var(--color-gray);
+  border: none;
+}
+
+.button-circle:hover {
+  cursor: pointer;
+  background-color: var(--color-yellow);
+  border: none;
+}
