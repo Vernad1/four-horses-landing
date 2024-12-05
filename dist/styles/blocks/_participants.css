@@ -1,0 +1,126 @@
+.participants__header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.participants__title {
+  font-size: 54px;
+  text-transform: uppercase;
+}
+
+.participants__list {
+  font-family: var(--font-family-alt);
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: none;
+  gap: 20px;
+  -moz-column-gap: 20px;
+  column-gap: 20px;
+
+  scroll-snap-type: x mandatory;
+  overflow-x: scroll;
+}
+
+.participants__list-title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.participants__list-description {
+  text-align: center;
+
+  font-size: 20px;
+  opacity: 0.6;
+}
+
+.participants__list-item {
+  padding-inline: 37px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.participants__list-image {
+  margin-bottom: 28px;
+  object-fit: contain;
+}
+
+.participants__list-title {
+  margin-bottom: 6px;
+}
+
+.participants__list-description {
+  margin-bottom: 20px;
+}
+
+.participants__list-wrapper {
+  max-width: 394px;
+  width: calc(100vw / 3 - 20px);
+}
+
+@media (max-width: 1280px) {
+  .participants__title {
+    font-size: 36px;
+  }
+
+  .participants__list-title {
+    font-size: 20px;
+  }
+
+  .participants__list-description {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .participants__list-title {
+    font-size: 18px;
+  }
+
+  .participants__list-description {
+    font-size: 14px;
+  }
+  .participants__list-wrapper {
+    width: calc(100vw / 2 - 20px);
+  }
+
+  .participants__wrapper {
+    display: flex;
+    overflow-x: hidden;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 40px;
+  }
+
+  .participants__title {
+    order: -2;
+  }
+  .participants__body {
+    order: -1;
+  }
+
+  .participants__header {
+    display: contents;
+  }
+}
+
+@media (max-width: 480px) {
+  .participants__list-title {
+    font-size: 24px;
+  }
+
+  .participants__list-description {
+    font-size: 20px;
+  }
+
+  .participants__list-wrapper {
+    width: calc(100vw - 20px);
+  }
+
+  .participants__list-item {
+    width: calc(100vw - 20px);
+    padding-inline: 45px;
+  }
+}

@@ -1,0 +1,38 @@
+:root {
+  --color-dark: #1f1f1f;
+  --color-dark-alt: #313131;
+  --color-white: #fff;
+  --color-brown: #e9ded4;
+  --color-yellow: #fbce51;
+  --color-gray: #d6d6d6;
+  --color-gray-alt: #d0d0d0;
+  --color-accent: #f54932;
+  --color-accent-alt: #3057a2;
+
+  --border: 2px solid var(--color-dark);
+  --border-radius: 66px;
+  --border-alt: 1px solid var(--color-accent-alt);
+  --border-small-radius: 62px;
+
+  --font-family-base: "Merriweather", sans-serif;
+  --font-family-alt: "Golos Text", sans-serif;
+
+  --button-height: 72px;
+  --button-height-small: 47px;
+  --button-alt-height: 35px;
+
+  --transition-duration: 0.2s;
+
+  --container-width: 1222px;
+  --container-padding-x: 20px;
+
+  --section-padding-y-small: 40px;
+  --section-padding-y-medium: 70px;
+  --section-padding-y-large: 100px;
+
+  @media (max-width: 768px) {
+    --section-padding-y-small: 24px;
+    --section-padding-y-medium: 50px;
+    --section-padding-y-large: 60px;
+  }
+}

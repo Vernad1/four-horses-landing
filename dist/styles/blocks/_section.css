@@ -1,0 +1,19 @@
+.section--paddings {
+  padding-block: var(--section-padding-y-large);
+}
+
+.section--small-bottom-padding {
+  padding-bottom: var(--section-padding-y-small);
+}
+
+.section--medium-bottom-padding {
+  padding-bottom: var(--section-padding-y-medium);
+}
+
+.section--medium-top-padding {
+  padding-top: var(--section-padding-y-medium);
+}
+
+.section--small-top-padding {
+  padding-top: var(--section-padding-y-small);
+}
